@@ -1,0 +1,9 @@
+. {
+    log
+    errors
+    hosts ./hosts {
+        fallthrough
+        ttl 300
+    }
+    forward . 8.8.8.8:53
+}
